@@ -59,7 +59,6 @@ int main() {
 
         printf("Result: %.2f\n\n", result);
     }
-
-    printf("Thank you for using the basic calculator!\n");
+    
     exit(1);
 }
