@@ -47,8 +47,13 @@ int main() {
             result = numberA * numberB;
             break;
         case 4:
-            result = numberA / numberB;
-            break;
+            if(!numberB) {
+                printf("Invalid operation. Please choose again.\n");
+                continue;
+            } else {
+                result = numberA / numberB;
+                break;
+            }
         case 5:
             result = fmod(numberA, numberB);
             break;
@@ -59,6 +64,6 @@ int main() {
 
         printf("Result: %.2f\n\n", result);
     }
-    
+
     exit(1);
 }
